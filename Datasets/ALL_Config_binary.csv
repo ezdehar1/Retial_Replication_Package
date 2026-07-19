@@ -1,0 +1,205 @@
+Config_ID,Active_Services,adv1,adv2,analytics1,analytics2,breaking,content1,content2,gateway,media1,media2,recommendation1,recommendation2
+1,content1,0,0,0,0,0,1,0,1,0,0,0,0
+2,content2,0,0,0,0,0,0,1,1,0,0,0,0
+3,"content1, media1",0,0,0,0,0,1,0,1,1,0,0,0
+4,"content2, media1",0,0,0,0,0,0,1,1,1,0,0,0
+5,"content1, media2",0,0,0,0,0,1,0,1,0,1,0,0
+6,"content2, media2",0,0,0,0,0,0,1,1,0,1,0,0
+7,"content1, analytics1",0,0,1,0,0,1,0,1,0,0,0,0
+8,"content2, analytics1",0,0,1,0,0,0,1,1,0,0,0,0
+9,"content1, media1, analytics1",0,0,1,0,0,1,0,1,1,0,0,0
+10,"content2, media1, analytics1",0,0,1,0,0,0,1,1,1,0,0,0
+11,"content1, media2, analytics1",0,0,1,0,0,1,0,1,0,1,0,0
+12,"content2, media2, analytics1",0,0,1,0,0,0,1,1,0,1,0,0
+13,"content1, analytics2",0,0,0,1,0,1,0,1,0,0,0,0
+14,"content2, analytics2",0,0,0,1,0,0,1,1,0,0,0,0
+15,"content1, media1, analytics2",0,0,0,1,0,1,0,1,1,0,0,0
+16,"content2, media1, analytics2",0,0,0,1,0,0,1,1,1,0,0,0
+17,"content1, media2, analytics2",0,0,0,1,0,1,0,1,0,1,0,0
+18,"content2, media2, analytics2",0,0,0,1,0,0,1,1,0,1,0,0
+19,"content1, recommendation1",0,0,0,0,0,1,0,1,0,0,1,0
+20,"content2, recommendation1",0,0,0,0,0,0,1,1,0,0,1,0
+21,"content1, media1, recommendation1",0,0,0,0,0,1,0,1,1,0,1,0
+22,"content2, media1, recommendation1",0,0,0,0,0,0,1,1,1,0,1,0
+23,"content1, media2, recommendation1",0,0,0,0,0,1,0,1,0,1,1,0
+24,"content2, media2, recommendation1",0,0,0,0,0,0,1,1,0,1,1,0
+25,"content1, analytics1, recommendation1",0,0,1,0,0,1,0,1,0,0,1,0
+26,"content2, analytics1, recommendation1",0,0,1,0,0,0,1,1,0,0,1,0
+27,"content1, media1, analytics1, recommendation1",0,0,1,0,0,1,0,1,1,0,1,0
+28,"content2, media1, analytics1, recommendation1",0,0,1,0,0,0,1,1,1,0,1,0
+29,"content1, media2, analytics1, recommendation1",0,0,1,0,0,1,0,1,0,1,1,0
+30,"content2, media2, analytics1, recommendation1",0,0,1,0,0,0,1,1,0,1,1,0
+31,"content1, analytics2, recommendation1",0,0,0,1,0,1,0,1,0,0,1,0
+32,"content2, analytics2, recommendation1",0,0,0,1,0,0,1,1,0,0,1,0
+33,"content1, media1, analytics2, recommendation1",0,0,0,1,0,1,0,1,1,0,1,0
+34,"content2, media1, analytics2, recommendation1",0,0,0,1,0,0,1,1,1,0,1,0
+35,"content1, media2, analytics2, recommendation1",0,0,0,1,0,1,0,1,0,1,1,0
+36,"content2, media2, analytics2, recommendation1",0,0,0,1,0,0,1,1,0,1,1,0
+37,"content1, analytics2, recommendation2",0,0,0,1,0,1,0,1,0,0,0,1
+38,"content2, analytics2, recommendation2",0,0,0,1,0,0,1,1,0,0,0,1
+39,"content1, media1, analytics2, recommendation2",0,0,0,1,0,1,0,1,1,0,0,1
+40,"content2, media1, analytics2, recommendation2",0,0,0,1,0,0,1,1,1,0,0,1
+41,"content1, media2, analytics2, recommendation2",0,0,0,1,0,1,0,1,0,1,0,1
+42,"content2, media2, analytics2, recommendation2",0,0,0,1,0,0,1,1,0,1,0,1
+43,"content1, adv1",1,0,0,0,0,1,0,1,0,0,0,0
+44,"content2, adv1",1,0,0,0,0,0,1,1,0,0,0,0
+45,"content1, media1, adv1",1,0,0,0,0,1,0,1,1,0,0,0
+46,"content2, media1, adv1",1,0,0,0,0,0,1,1,1,0,0,0
+47,"content1, media2, adv1",1,0,0,0,0,1,0,1,0,1,0,0
+48,"content2, media2, adv1",1,0,0,0,0,0,1,1,0,1,0,0
+49,"content1, analytics1, adv1",1,0,1,0,0,1,0,1,0,0,0,0
+50,"content2, analytics1, adv1",1,0,1,0,0,0,1,1,0,0,0,0
+51,"content1, media1, analytics1, adv1",1,0,1,0,0,1,0,1,1,0,0,0
+52,"content2, media1, analytics1, adv1",1,0,1,0,0,0,1,1,1,0,0,0
+53,"content1, media2, analytics1, adv1",1,0,1,0,0,1,0,1,0,1,0,0
+54,"content2, media2, analytics1, adv1",1,0,1,0,0,0,1,1,0,1,0,0
+55,"content1, analytics2, adv1",1,0,0,1,0,1,0,1,0,0,0,0
+56,"content2, analytics2, adv1",1,0,0,1,0,0,1,1,0,0,0,0
+57,"content1, media1, analytics2, adv1",1,0,0,1,0,1,0,1,1,0,0,0
+58,"content2, media1, analytics2, adv1",1,0,0,1,0,0,1,1,1,0,0,0
+59,"content1, media2, analytics2, adv1",1,0,0,1,0,1,0,1,0,1,0,0
+60,"content2, media2, analytics2, adv1",1,0,0,1,0,0,1,1,0,1,0,0
+61,"content1, recommendation1, adv1",1,0,0,0,0,1,0,1,0,0,1,0
+62,"content2, recommendation1, adv1",1,0,0,0,0,0,1,1,0,0,1,0
+63,"content1, media1, recommendation1, adv1",1,0,0,0,0,1,0,1,1,0,1,0
+64,"content2, media1, recommendation1, adv1",1,0,0,0,0,0,1,1,1,0,1,0
+65,"content1, media2, recommendation1, adv1",1,0,0,0,0,1,0,1,0,1,1,0
+66,"content2, media2, recommendation1, adv1",1,0,0,0,0,0,1,1,0,1,1,0
+67,"content1, analytics1, recommendation1, adv1",1,0,1,0,0,1,0,1,0,0,1,0
+68,"content2, analytics1, recommendation1, adv1",1,0,1,0,0,0,1,1,0,0,1,0
+69,"content1, media1, analytics1, recommendation1, adv1",1,0,1,0,0,1,0,1,1,0,1,0
+70,"content2, media1, analytics1, recommendation1, adv1",1,0,1,0,0,0,1,1,1,0,1,0
+71,"content1, media2, analytics1, recommendation1, adv1",1,0,1,0,0,1,0,1,0,1,1,0
+72,"content2, media2, analytics1, recommendation1, adv1",1,0,1,0,0,0,1,1,0,1,1,0
+73,"content1, analytics2, recommendation1, adv1",1,0,0,1,0,1,0,1,0,0,1,0
+74,"content2, analytics2, recommendation1, adv1",1,0,0,1,0,0,1,1,0,0,1,0
+75,"content1, media1, analytics2, recommendation1, adv1",1,0,0,1,0,1,0,1,1,0,1,0
+76,"content2, media1, analytics2, recommendation1, adv1",1,0,0,1,0,0,1,1,1,0,1,0
+77,"content1, media2, analytics2, recommendation1, adv1",1,0,0,1,0,1,0,1,0,1,1,0
+78,"content2, media2, analytics2, recommendation1, adv1",1,0,0,1,0,0,1,1,0,1,1,0
+79,"content1, analytics2, recommendation2, adv1",1,0,0,1,0,1,0,1,0,0,0,1
+80,"content2, analytics2, recommendation2, adv1",1,0,0,1,0,0,1,1,0,0,0,1
+81,"content1, media1, analytics2, recommendation2, adv1",1,0,0,1,0,1,0,1,1,0,0,1
+82,"content2, media1, analytics2, recommendation2, adv1",1,0,0,1,0,0,1,1,1,0,0,1
+83,"content1, media2, analytics2, recommendation2, adv1",1,0,0,1,0,1,0,1,0,1,0,1
+84,"content2, media2, analytics2, recommendation2, adv1",1,0,0,1,0,0,1,1,0,1,0,1
+85,"content1, analytics2, adv2",0,1,0,1,0,1,0,1,0,0,0,0
+86,"content2, analytics2, adv2",0,1,0,1,0,0,1,1,0,0,0,0
+87,"content1, media1, analytics2, adv2",0,1,0,1,0,1,0,1,1,0,0,0
+88,"content2, media1, analytics2, adv2",0,1,0,1,0,0,1,1,1,0,0,0
+89,"content1, media2, analytics2, adv2",0,1,0,1,0,1,0,1,0,1,0,0
+90,"content2, media2, analytics2, adv2",0,1,0,1,0,0,1,1,0,1,0,0
+91,"content1, analytics2, recommendation1, adv2",0,1,0,1,0,1,0,1,0,0,1,0
+92,"content2, analytics2, recommendation1, adv2",0,1,0,1,0,0,1,1,0,0,1,0
+93,"content1, media1, analytics2, recommendation1, adv2",0,1,0,1,0,1,0,1,1,0,1,0
+94,"content2, media1, analytics2, recommendation1, adv2",0,1,0,1,0,0,1,1,1,0,1,0
+95,"content1, media2, analytics2, recommendation1, adv2",0,1,0,1,0,1,0,1,0,1,1,0
+96,"content2, media2, analytics2, recommendation1, adv2",0,1,0,1,0,0,1,1,0,1,1,0
+97,"content1, analytics2, recommendation2, adv2",0,1,0,1,0,1,0,1,0,0,0,1
+98,"content2, analytics2, recommendation2, adv2",0,1,0,1,0,0,1,1,0,0,0,1
+99,"content1, media1, analytics2, recommendation2, adv2",0,1,0,1,0,1,0,1,1,0,0,1
+100,"content2, media1, analytics2, recommendation2, adv2",0,1,0,1,0,0,1,1,1,0,0,1
+101,"content1, media2, analytics2, recommendation2, adv2",0,1,0,1,0,1,0,1,0,1,0,1
+102,"content2, media2, analytics2, recommendation2, adv2",0,1,0,1,0,0,1,1,0,1,0,1
+103,"content1, breaking",0,0,0,0,1,1,0,1,0,0,0,0
+104,"content2, breaking",0,0,0,0,1,0,1,1,0,0,0,0
+105,"content1, media1, breaking",0,0,0,0,1,1,0,1,1,0,0,0
+106,"content2, media1, breaking",0,0,0,0,1,0,1,1,1,0,0,0
+107,"content1, media2, breaking",0,0,0,0,1,1,0,1,0,1,0,0
+108,"content2, media2, breaking",0,0,0,0,1,0,1,1,0,1,0,0
+109,"content1, analytics1, breaking",0,0,1,0,1,1,0,1,0,0,0,0
+110,"content2, analytics1, breaking",0,0,1,0,1,0,1,1,0,0,0,0
+111,"content1, media1, analytics1, breaking",0,0,1,0,1,1,0,1,1,0,0,0
+112,"content2, media1, analytics1, breaking",0,0,1,0,1,0,1,1,1,0,0,0
+113,"content1, media2, analytics1, breaking",0,0,1,0,1,1,0,1,0,1,0,0
+114,"content2, media2, analytics1, breaking",0,0,1,0,1,0,1,1,0,1,0,0
+115,"content1, analytics2, breaking",0,0,0,1,1,1,0,1,0,0,0,0
+116,"content2, analytics2, breaking",0,0,0,1,1,0,1,1,0,0,0,0
+117,"content1, media1, analytics2, breaking",0,0,0,1,1,1,0,1,1,0,0,0
+118,"content2, media1, analytics2, breaking",0,0,0,1,1,0,1,1,1,0,0,0
+119,"content1, media2, analytics2, breaking",0,0,0,1,1,1,0,1,0,1,0,0
+120,"content2, media2, analytics2, breaking",0,0,0,1,1,0,1,1,0,1,0,0
+121,"content1, recommendation1, breaking",0,0,0,0,1,1,0,1,0,0,1,0
+122,"content2, recommendation1, breaking",0,0,0,0,1,0,1,1,0,0,1,0
+123,"content1, media1, recommendation1, breaking",0,0,0,0,1,1,0,1,1,0,1,0
+124,"content2, media1, recommendation1, breaking",0,0,0,0,1,0,1,1,1,0,1,0
+125,"content1, media2, recommendation1, breaking",0,0,0,0,1,1,0,1,0,1,1,0
+126,"content2, media2, recommendation1, breaking",0,0,0,0,1,0,1,1,0,1,1,0
+127,"content1, analytics1, recommendation1, breaking",0,0,1,0,1,1,0,1,0,0,1,0
+128,"content2, analytics1, recommendation1, breaking",0,0,1,0,1,0,1,1,0,0,1,0
+129,"content1, media1, analytics1, recommendation1, breaking",0,0,1,0,1,1,0,1,1,0,1,0
+130,"content2, media1, analytics1, recommendation1, breaking",0,0,1,0,1,0,1,1,1,0,1,0
+131,"content1, media2, analytics1, recommendation1, breaking",0,0,1,0,1,1,0,1,0,1,1,0
+132,"content2, media2, analytics1, recommendation1, breaking",0,0,1,0,1,0,1,1,0,1,1,0
+133,"content1, analytics2, recommendation1, breaking",0,0,0,1,1,1,0,1,0,0,1,0
+134,"content2, analytics2, recommendation1, breaking",0,0,0,1,1,0,1,1,0,0,1,0
+135,"content1, media1, analytics2, recommendation1, breaking",0,0,0,1,1,1,0,1,1,0,1,0
+136,"content2, media1, analytics2, recommendation1, breaking",0,0,0,1,1,0,1,1,1,0,1,0
+137,"content1, media2, analytics2, recommendation1, breaking",0,0,0,1,1,1,0,1,0,1,1,0
+138,"content2, media2, analytics2, recommendation1, breaking",0,0,0,1,1,0,1,1,0,1,1,0
+139,"content1, analytics2, recommendation2, breaking",0,0,0,1,1,1,0,1,0,0,0,1
+140,"content2, analytics2, recommendation2, breaking",0,0,0,1,1,0,1,1,0,0,0,1
+141,"content1, media1, analytics2, recommendation2, breaking",0,0,0,1,1,1,0,1,1,0,0,1
+142,"content2, media1, analytics2, recommendation2, breaking",0,0,0,1,1,0,1,1,1,0,0,1
+143,"content1, media2, analytics2, recommendation2, breaking",0,0,0,1,1,1,0,1,0,1,0,1
+144,"content2, media2, analytics2, recommendation2, breaking",0,0,0,1,1,0,1,1,0,1,0,1
+145,"content1, adv1, breaking",1,0,0,0,1,1,0,1,0,0,0,0
+146,"content2, adv1, breaking",1,0,0,0,1,0,1,1,0,0,0,0
+147,"content1, media1, adv1, breaking",1,0,0,0,1,1,0,1,1,0,0,0
+148,"content2, media1, adv1, breaking",1,0,0,0,1,0,1,1,1,0,0,0
+149,"content1, media2, adv1, breaking",1,0,0,0,1,1,0,1,0,1,0,0
+150,"content2, media2, adv1, breaking",1,0,0,0,1,0,1,1,0,1,0,0
+151,"content1, analytics1, adv1, breaking",1,0,1,0,1,1,0,1,0,0,0,0
+152,"content2, analytics1, adv1, breaking",1,0,1,0,1,0,1,1,0,0,0,0
+153,"content1, media1, analytics1, adv1, breaking",1,0,1,0,1,1,0,1,1,0,0,0
+154,"content2, media1, analytics1, adv1, breaking",1,0,1,0,1,0,1,1,1,0,0,0
+155,"content1, media2, analytics1, adv1, breaking",1,0,1,0,1,1,0,1,0,1,0,0
+156,"content2, media2, analytics1, adv1, breaking",1,0,1,0,1,0,1,1,0,1,0,0
+157,"content1, analytics2, adv1, breaking",1,0,0,1,1,1,0,1,0,0,0,0
+158,"content2, analytics2, adv1, breaking",1,0,0,1,1,0,1,1,0,0,0,0
+159,"content1, media1, analytics2, adv1, breaking",1,0,0,1,1,1,0,1,1,0,0,0
+160,"content2, media1, analytics2, adv1, breaking",1,0,0,1,1,0,1,1,1,0,0,0
+161,"content1, media2, analytics2, adv1, breaking",1,0,0,1,1,1,0,1,0,1,0,0
+162,"content2, media2, analytics2, adv1, breaking",1,0,0,1,1,0,1,1,0,1,0,0
+163,"content1, recommendation1, adv1, breaking",1,0,0,0,1,1,0,1,0,0,1,0
+164,"content2, recommendation1, adv1, breaking",1,0,0,0,1,0,1,1,0,0,1,0
+165,"content1, media1, recommendation1, adv1, breaking",1,0,0,0,1,1,0,1,1,0,1,0
+166,"content2, media1, recommendation1, adv1, breaking",1,0,0,0,1,0,1,1,1,0,1,0
+167,"content1, media2, recommendation1, adv1, breaking",1,0,0,0,1,1,0,1,0,1,1,0
+168,"content2, media2, recommendation1, adv1, breaking",1,0,0,0,1,0,1,1,0,1,1,0
+169,"content1, analytics1, recommendation1, adv1, breaking",1,0,1,0,1,1,0,1,0,0,1,0
+170,"content2, analytics1, recommendation1, adv1, breaking",1,0,1,0,1,0,1,1,0,0,1,0
+171,"content1, media1, analytics1, recommendation1, adv1, breaking",1,0,1,0,1,1,0,1,1,0,1,0
+172,"content2, media1, analytics1, recommendation1, adv1, breaking",1,0,1,0,1,0,1,1,1,0,1,0
+173,"content1, media2, analytics1, recommendation1, adv1, breaking",1,0,1,0,1,1,0,1,0,1,1,0
+174,"content2, media2, analytics1, recommendation1, adv1, breaking",1,0,1,0,1,0,1,1,0,1,1,0
+175,"content1, analytics2, recommendation1, adv1, breaking",1,0,0,1,1,1,0,1,0,0,1,0
+176,"content2, analytics2, recommendation1, adv1, breaking",1,0,0,1,1,0,1,1,0,0,1,0
+177,"content1, media1, analytics2, recommendation1, adv1, breaking",1,0,0,1,1,1,0,1,1,0,1,0
+178,"content2, media1, analytics2, recommendation1, adv1, breaking",1,0,0,1,1,0,1,1,1,0,1,0
+179,"content1, media2, analytics2, recommendation1, adv1, breaking",1,0,0,1,1,1,0,1,0,1,1,0
+180,"content2, media2, analytics2, recommendation1, adv1, breaking",1,0,0,1,1,0,1,1,0,1,1,0
+181,"content1, analytics2, recommendation2, adv1, breaking",1,0,0,1,1,1,0,1,0,0,0,1
+182,"content2, analytics2, recommendation2, adv1, breaking",1,0,0,1,1,0,1,1,0,0,0,1
+183,"content1, media1, analytics2, recommendation2, adv1, breaking",1,0,0,1,1,1,0,1,1,0,0,1
+184,"content2, media1, analytics2, recommendation2, adv1, breaking",1,0,0,1,1,0,1,1,1,0,0,1
+185,"content1, media2, analytics2, recommendation2, adv1, breaking",1,0,0,1,1,1,0,1,0,1,0,1
+186,"content2, media2, analytics2, recommendation2, adv1, breaking",1,0,0,1,1,0,1,1,0,1,0,1
+187,"content1, analytics2, adv2, breaking",0,1,0,1,1,1,0,1,0,0,0,0
+188,"content2, analytics2, adv2, breaking",0,1,0,1,1,0,1,1,0,0,0,0
+189,"content1, media1, analytics2, adv2, breaking",0,1,0,1,1,1,0,1,1,0,0,0
+190,"content2, media1, analytics2, adv2, breaking",0,1,0,1,1,0,1,1,1,0,0,0
+191,"content1, media2, analytics2, adv2, breaking",0,1,0,1,1,1,0,1,0,1,0,0
+192,"content2, media2, analytics2, adv2, breaking",0,1,0,1,1,0,1,1,0,1,0,0
+193,"content1, analytics2, recommendation1, adv2, breaking",0,1,0,1,1,1,0,1,0,0,1,0
+194,"content2, analytics2, recommendation1, adv2, breaking",0,1,0,1,1,0,1,1,0,0,1,0
+195,"content1, media1, analytics2, recommendation1, adv2, breaking",0,1,0,1,1,1,0,1,1,0,1,0
+196,"content2, media1, analytics2, recommendation1, adv2, breaking",0,1,0,1,1,0,1,1,1,0,1,0
+197,"content1, media2, analytics2, recommendation1, adv2, breaking",0,1,0,1,1,1,0,1,0,1,1,0
+198,"content2, media2, analytics2, recommendation1, adv2, breaking",0,1,0,1,1,0,1,1,0,1,1,0
+199,"content1, analytics2, recommendation2, adv2, breaking",0,1,0,1,1,1,0,1,0,0,0,1
+200,"content2, analytics2, recommendation2, adv2, breaking",0,1,0,1,1,0,1,1,0,0,0,1
+201,"content1, media1, analytics2, recommendation2, adv2, breaking",0,1,0,1,1,1,0,1,1,0,0,1
+202,"content2, media1, analytics2, recommendation2, adv2, breaking",0,1,0,1,1,0,1,1,1,0,0,1
+203,"content1, media2, analytics2, recommendation2, adv2, breaking",0,1,0,1,1,1,0,1,0,1,0,1
+204,"content2, media2, analytics2, recommendation2, adv2, breaking",0,1,0,1,1,0,1,1,0,1,0,1
