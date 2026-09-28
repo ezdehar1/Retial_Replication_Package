@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: media1
+  labels:
+    app: media1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: media1
+  template:
+    metadata:
+      labels:
+        app: media1
+    spec:
+      containers:
+        - name: media1
+          image: fakhertalahmeh/media1-1.7:latest
+          ports:
+            - containerPort: 8000
+
+          # ⭐ Added resource configuration
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "600m"
+              memory: "512Mi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: media1
+  labels:
+    app: media1
+spec:
+  type: LoadBalancer
+  selector:
+    app: media1
+  ports:
+    - protocol: TCP
+      port: 8101
+      targetPort: 8000

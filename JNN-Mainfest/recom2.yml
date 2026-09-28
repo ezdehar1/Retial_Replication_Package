@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recommendation2
+  labels:
+    app: recommendation2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: recommendation2
+  template:
+    metadata:
+      labels:
+        app: recommendation2
+    spec:
+      containers:
+        - name: recommendation2
+          image: fakhertalahmeh/recom2-1.7:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: ANALYTICS1_URL
+              value: "http://analytics1:8301"
+            - name: ANALYTICS2_URL
+              value: "http://analytics2:8302"
+            - name: UNLEASH_URL
+              value: "http://unleash:4242/api"
+            - name: UNLEASH_API_TOKEN
+              value: "*:development.42d0479999545dd951b89655d59395e880c9f015f065b9b5d778630a"
+            - name: UNLEASH_APP_NAME
+              value: "gateway-service"
+            - name: UNLEASH_INSTANCE_ID
+              value: "gateway-service-instance"
+
+          # ⭐ Added resource configuration
+          resources:
+            requests:
+              cpu: "600m"
+              memory: "450Mi"
+            limits:
+              cpu: "1600m"
+              memory: "1Gi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: recommendation2
+  labels:
+    app: recommendation2
+spec:
+  type: LoadBalancer
+  selector:
+    app: recommendation2
+  ports:
+    - protocol: TCP
+      port: 8402
+      targetPort: 8000

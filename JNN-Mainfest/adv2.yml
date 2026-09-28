@@ -1,0 +1,52 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adv2
+  labels:
+    app: adv2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: adv2
+  template:
+    metadata:
+      labels:
+        app: adv2
+    spec:
+      containers:
+        - name: adv2
+          image: fakhertalahmeh/adv2-1.7:latest
+          ports:
+            - containerPort: 8000
+
+          env:
+            - name: ANALYTICS1_URL
+              value: "http://analytics1:8301"
+            - name: ANALYTICS2_URL
+              value: "http://analytics2:8302"
+
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "250Mi"
+            limits:
+              cpu: "700m"
+              memory: "600Mi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: adv2
+  labels:
+    app: adv2
+spec:
+  type: ClusterIP
+  selector:
+    app: adv2
+  ports:
+    - protocol: TCP
+      port: 8502
+      targetPort: 8000

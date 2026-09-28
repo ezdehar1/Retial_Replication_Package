@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adv1
+  labels:
+    app: adv1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: adv1
+  template:
+    metadata:
+      labels:
+        app: adv1
+    spec:
+      containers:
+        - name: adv1
+          image: fakhertalahmeh/adv-100:latest
+          ports:
+            - containerPort: 8000
+
+          resources:
+            requests:
+              cpu: "150m"
+              memory: "200Mi"
+            limits:
+              cpu: "400m"
+              memory: "400Mi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: adv1
+  labels:
+    app: adv1
+spec:
+  type: LoadBalancer
+  selector:
+    app: adv1
+  ports:
+    - protocol: TCP
+      port: 8501
+      targetPort: 8000

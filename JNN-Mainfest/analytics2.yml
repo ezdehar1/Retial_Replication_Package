@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: analytics2
+  labels:
+    app: analytics2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: analytics2
+  template:
+    metadata:
+      labels:
+        app: analytics2
+    spec:
+      containers:
+        - name: analytics2
+          image: fakhertalahmeh/analytics2-1.7:latest
+          ports:
+            - containerPort: 8000
+
+          resources:
+            requests:
+              cpu: "350m"
+              memory: "350Mi"
+            limits:
+              cpu: "900m"
+              memory: "700Mi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: analytics2
+  labels:
+    app: analytics2
+spec:
+  type: LoadBalancer
+  selector:
+    app: analytics2
+  ports:
+    - protocol: TCP
+      port: 8302
+      targetPort: 8000

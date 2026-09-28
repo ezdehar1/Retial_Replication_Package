@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: content1
+  labels:
+    app: content1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: content1
+  template:
+    metadata:
+      labels:
+        app: content1
+    spec:
+      containers:
+        - name: content1
+          image: fakhertalahmeh/content1-1.7:latest
+          ports:
+            - containerPort: 8000
+
+          resources:
+            requests:
+              cpu: "150m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: content1
+  labels:
+    app: content1
+spec:
+  type: LoadBalancer
+  selector:
+    app: content1
+  ports:
+    - protocol: TCP
+      port: 8201
+      targetPort: 8000

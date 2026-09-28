@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway
+  labels:
+    app: gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gateway
+  template:
+    metadata:
+      labels:
+        app: gateway
+    spec:
+      containers:
+        - name: gateway
+          image: fakhertalahmeh/gateway-1.5:latest
+          ports:
+            - containerPort: 8000
+
+          env:
+            - name: UNLEASH_URL
+              value: "http://unleash:4242/api"
+            - name: UNLEASH_API_TOKEN
+              value: "*:development.42d0479999545dd951b89655d59395e880c9f015f065b9b5d778630a"
+            - name: UNLEASH_APP_NAME
+              value: "gateway-service"
+            - name: UNLEASH_INSTANCE_ID
+              value: "gateway-service-instance"
+
+            - name: MEDIA1_URL
+              value: "http://media1:8101"
+            - name: MEDIA2_URL
+              value: "http://media2:8102"
+            - name: CONTENT1_URL
+              value: "http://content1:8201"
+            - name: CONTENT2_URL
+              value: "http://content2:8202"
+            - name: ANALYTICS1_URL
+              value: "http://analytics1:8301"
+            - name: ANALYTICS2_URL
+              value: "http://analytics2:8302"
+            - name: RECOM1_URL
+              value: "http://recommendation1:8401"
+            - name: RECOM2_URL
+              value: "http://recommendation2:8402"
+            - name: ADV1_URL
+              value: "http://adv1:8501"
+            - name: ADV2_URL
+              value: "http://adv2:8502"
+            - name: BREAKING_URL
+              value: "http://breaking:8601"
+
+          # ⭐ Added resource configuration
+          resources:
+            requests:
+              cpu: "400m"
+              memory: "512Mi"
+            limits:
+              cpu: "1500m"
+              memory: "1Gi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gateway
+  labels:
+    app: gateway
+spec:
+  type: LoadBalancer
+  selector:
+    app: gateway
+  ports:
+    - protocol: TCP
+      port: 8888
+      targetPort: 8000

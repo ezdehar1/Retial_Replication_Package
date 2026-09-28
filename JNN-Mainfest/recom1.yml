@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recommendation1
+  labels:
+    app: recommendation1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: recommendation1
+  template:
+    metadata:
+      labels:
+        app: recommendation1
+    spec:
+      containers:
+        - name: recommendation1
+          image: fakhertalahmeh/recom1-1.7:latest
+          ports:
+            - containerPort: 8000
+
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "300Mi"
+            limits:
+              cpu: "800m"
+              memory: "800Mi"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: recommendation1
+  labels:
+    app: recommendation1
+spec:
+  type: LoadBalancer
+  selector:
+    app: recommendation1
+  ports:
+    - protocol: TCP
+      port: 8401
+      targetPort: 8000
